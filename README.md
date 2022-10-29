@@ -3,7 +3,7 @@
 # HacktoberFest-2022 🏆 
 
 #### 🎯 HacktoberFest - The month long festival for developers
-![Logo]()
+![Logo](https://github.com/weaponxwolf/Hacktoberfest-22/blob/main/event_data/images/Email%20Banners-Dark.png)
 
 - This repository aims to give an introduction as to how the Open Source World functions. Use this project to make your first contribution to an open-source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
 
