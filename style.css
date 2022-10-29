@@ -1,0 +1,502 @@
+/* USE BETTER COLOUR COMBINATIONS :D */
+/* Give proper spacing and styling to components */
+/* Use Proper Fonts */
+body {
+  padding-top: 1rem;
+  margin: 0;
+  background-color: #2D6967 ;
+  height: auto;
+  overflow-x: hidden;
+}
+.open{
+  cursor: pointer;
+}
+a.logo {
+  font-size: 2.5em;
+  font-family: 'Dancing Script', cursive;
+}
+
+.hov{transition: all .4s ease-in-out;}
+
+.hov:hover {
+      
+  transform: scale(1.1);
+
+/* position:relative;
+
+height:200px !important ; */
+}
+
+form.searchForm {
+  width: 55%;
+  /* height: 100px; */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 2rem auto 0;
+  background: white;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+input#searchText {
+  /* width: 60%; */
+    border: none;
+    width: 100%;
+  border-radius: 30px;
+  padding: 7px;
+  outline: none;
+}
+
+button#searchBtn {
+  outline: none;
+  background: inherit;
+  border: none;
+}
+
+.searchIcon {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+.navbar{
+  background-color: #2D6967 ;
+}
+.navbar-brand{
+  color: white;
+}
+
+.navbar-nav li a{
+  color: white;
+}
+
+.main-area{
+  display: flex;
+  height: 80vh;
+}
+
+#searchBar{
+  margin-top: 20vh;
+}
+
+.container1{
+height: 90%;
+width: 90%;
+margin: 40px auto;
+padding: 30px;
+}
+
+.container-fluid{
+height: 90%;
+width: 90%;
+margin-top: 40px;
+padding: 30px;
+border-radius: 40px;
+background:  #e6e7ee; 
+box-shadow: 3px 3px 6px #b8b9be,-3px -3px 6px #fff;
+}
+
+.card{
+border-radius: 21px;
+/* box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff; */
+background-color: #48A9A6;
+margin: 20px auto 0;
+/* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+}
+
+.card:hover{
+box-shadow: 3px 3px 10px #b8b9be, -3px -3px 6px #fff;
+color: white;
+transition: all 0.3s;
+}
+
+.card-img, .card-img-top{
+border-radius: 15px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* #searchForm{
+  margin-top:50px;
+} */
+
+/* set hidden with !important to override other display css */
+.hidden{
+  display: none !important;
+}
+
+#searchResult{
+  margin: 20px;
+  padding: 20px
+}
+
+.inline-ul li{
+  display: inline;
+  margin-right: 30px;
+}
+#sec-ul li a{
+  color: #fff;
+}
+
+#sec-ul li a:hover{
+  background-color: #1F2041;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+
+.active-b{
+  background-color: #1F2041;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
+
+table{
+  margin-top: 35px;
+  border-radius: 10px;
+}
+
+td, th{
+  border: 2px solid black;
+  color: #b3b3b3;
+  padding: 5px
+}
+
+th{
+  color: #000;
+  font-size: 30px;
+}
+
+#sec-info{
+  margin-top:50px;
+}
+
+.container .head-row {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 979px) {
+  .container .head-row {
+    justify-content: flex-start;
+    margin: 0 20px;
+    }
+
+    form#searchForm {
+      width: 80%;
+    }
+}
+
+#main-info{display:flex;}
+
+#show-image img{border-radius: 10px;}
+
+#show-prim-info{margin-left: 50px;}
+
+.list-links::after{color:#ffffff}
+
+.tvcard:hover{
+  cursor: pointer;
+}
+
+.season_design{
+  background-color: rgb(255, 255, 255,0.2);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  font-size: 18px;
+  list-style: none;
+  margin-top:30px
+}
+
+.slink {
+  color:black;
+  font-weight: bold;
+}
+
+.slink:hover {
+  color:rgb(155, 240, 240);
+  font-weight: bold;
+}
+
+.table_design{
+  background-color: #feffff;
+  color: black;
+} 
+
+.table_design td{
+  color: black;
+  border: 0px solid white;
+}
+
+.table_design th{
+  background-color: #263f52;
+  color: white;
+  border: solid black 0px;
+  font-size: 16px;
+}
+
+.table_design tr:nth-child(odd){
+  background-color: #c3c4c4;
+}
+
+.carousel{
+  width: 1100px;
+  height: 140px;
+
+}
+
+#recommendations > div{
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.recom-div > img{
+  width: 250px;
+  height: 140px;
+  border-radius: 10px;
+  box-shadow: 9px 9px 20px, 7px 7px 10px, 5px 5px 7px, 3px 3px 1px, 1px 1px;
+}
+.recom-div > span{
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.recs{display: flex;}
+
+.recom-div{margin:10px}
+
+.recom-div > span > p:nth-child(1){
+  margin-right: 30px;
+}
+
+.active-link{
+  color:cyan;
+}
+.cast-card {
+  border-radius: 20px;
+  width: 14rem;
+  height: 280px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  #main-info{
+    align-items: center;
+    flex-direction: column;
+  }
+  #show-prim-info{
+    margin-left: 0;
+  }
+  #show-prim-info h1{
+    text-align: center;
+  }
+}
+a{
+  cursor: pointer;
+}
+
+.genre-list{
+  list-style: none;
+  /* display: flex; */
+  text-align: center;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+.genre-btns{
+  border-radius: 40px;
+  /* box-shadow: 13px 13px 20px #cbced1,
+            -13px -13px 20px #ffffff; */
+  padding: 5px 12px;
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: #48A9A6;
+  color: #fff;
+  font-size: 1.25rem;
+  box-shadow: 3px 3px 20px rgb(0, 0, 0,0.2),
+              -3px -3px 20px rgb(0, 0, 0,0.4);
+}
+
+/* set to !important to override other styles */
+.active-c{
+  box-shadow: inset 3px 3px 20px rgb(0, 0, 0,0.2),
+             inset -3px -3px 20px rgb(0, 0, 0,0.4) !important;
+  background-color: #1c413f !important;
+}
+
+.genre-btns:hover{
+  box-shadow: inset 3px 3px 20px rgb(0, 0, 0,0.2),
+             inset -3px -3px 20px rgb(0, 0, 0,0.4);
+  background-color: #1c413f;
+  cursor: pointer;
+}
+
+.mv_img {
+	width: 400px;
+  display: block;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no_mv {
+  color: white;
+  text-align: center;
+}
+
+.chooseSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.discover {
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgb(0, 0, 0,0.2),
+              -3px -3px 20px rgb(0, 0, 0,0.4);
+  margin-right: 30px;
+  color: #fff;
+  background-color: #2D6967;
+  height: 3.5rem;
+  width: auto;
+  padding: 8px 15px;
+  border: 0px;
+  font-size: 1.5rem;
+}
+
+.discover:hover{
+  box-shadow: inset 3px 3px 20px rgb(0, 0, 0,0.2),
+             inset -3px -3px 20px rgb(0, 0, 0,0.4);
+  background-color: #1c413f;
+}
+
+.exp-sec{
+  max-width: 1000px;
+  height: auto;
+  margin: auto auto;
+  padding: 10px;
+  position: relative;
+}
+
+.exp-cont{
+  min-height: 250px;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: inset 3px 3px 20px rgb(0, 0, 0,0.2),
+             inset -3px -3px 20px rgb(0, 0, 0,0.4);
+  background-color: #1c413f;
+  overflow-x: hidden; 
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.exp-sec-info{
+  margin-top: 50px; 
+}
+
+.exp-sec .display-6{
+  display: inline;
+  margin-right: 30px;
+}
+
+.exp-cont div{
+  margin-right: 20px;
+}
+
+.exp-cont div img{
+  border-radius: 15px;
+  height: 200px;
+}
+.exp-cont div h6{
+  color: white;
+  margin-top: 10px;
+}
+
+.exp-btn{
+  all: unset;
+  margin-bottom: 15px;
+  background-color:#48A9A6;
+  width: 50px;
+  margin: 10px;
+  border-radius: 7px;
+  text-align: center;
+  padding: 7px;
+  font-weight: 600;
+  box-shadow: 3px 3px 20px rgb(0, 0, 0,0.2),
+              -3px -3px 20px rgb(0, 0, 0,0.4);
+  color: white;
+}
+
+.exp-btn:hover{
+  box-shadow: inset 3px 3px 20px rgb(0, 0, 0,0.2),
+  inset -3px -3px 20px rgb(0, 0, 0,0.4);
+  background-color: #1c413f;
+}
+
+.active-d{
+  box-shadow: inset 3px 3px 20px rgb(0, 0, 0,0.2),
+             inset -3px -3px 20px rgb(0, 0, 0,0.4);
+  background-color: #1c413f;
+}
+
+.active-e {
+  box-shadow: inset 3px 3px 20px rgb(0, 0, 0,0.2),
+             inset -3px -3px 20px rgb(0, 0, 0,0.4);
+  background-color: #1c413f;
+  border-radius: 10px;
+  margin-right: 30px;
+  color: #fff;
+  height: 3.5rem;
+  width: auto;
+  padding: 8px 15px;
+  border: 0px;
+  font-size: 1.5rem;
+}
+
+#pageBar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.page-item {
+  font-size: 1.4rem;
+}
+
+.explore {
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgb(0, 0, 0,0.2),
+              -3px -3px 20px rgb(0, 0, 0,0.4);
+  margin-right: 30px;
+  color: #fff;
+  background-color: #2D6967;
+  height: 3.5rem;
+  width: auto;
+  padding: 8px 15px;
+  border: 0px;
+  font-size: 1.5rem;
+}
