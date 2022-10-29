@@ -10,15 +10,13 @@
 
 - This repository is open to all members of the GitHub community. Any member can contribute to this project without being a collaborator. We encourage first time contributors, and also have interesting tasks for experienced developers.
 
-<hr>
+
 
 # What is Hacktoberfest? 😕
 
 A month-long celebration from October 1st to October 31st presented by Digital Ocean and DEV Community collaborated with GitHub to get people involved in Open Source. Create your very first pull request to any public repository on GitHub and contribute to the open-source developer community.
 
 https://hacktoberfest.com/
-
-<hr>
 
 
 # Hacktoberfest Tv-series/Movie search app
