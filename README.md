@@ -41,7 +41,7 @@ Star the repo by pressing the topmost-right button to start your wonderful journ
 
 You can get your own fork/copy of [Hacktoberfest-22](https://github.com/ietebitmesra/Hacktoberfest-22) by using the <a href="https://github.com/ietebitmesra/Hacktoberfest-22/fork"><kbd><b>Fork</b></kbd></a> button on top-right of your screen.
 
- [![Fork Button](https://help.github.com/assets/images/help/repository/fork_button.jpg)](https://github.com/ietebitmesra/Hacktoberfest-21/)
+ [![Fork Button](https://github.com/weaponxwolf/Hacktoberfest-22/blob/main/event_data/images/GitHub_Fork_Button.png)](https://github.com/ietebitmesra/Hacktoberfest-22/)
 
 
 ### 2. Clone it :busts_in_silhouette:
