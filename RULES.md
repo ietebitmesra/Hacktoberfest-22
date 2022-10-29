@@ -26,8 +26,6 @@ This time around we have different prizes for the top 15 contributors who will b
 - All decisions made by IETE will be final and binding, no changes will be entertained after the result declaration.
 
 
-View Your contribution at: 
-
 # Points Distribution :bar_chart:
 
 - Implementing any of the features which are mandatory are important to mark your score in order to be eligible for prizes.
