@@ -1,4 +1,3 @@
-<hr>
 
 # HacktoberFest-2022 🏆 
 
@@ -12,12 +11,14 @@
 - This repository is open to all members of the GitHub community. Any member can contribute to this project without being a collaborator. We encourage first time contributors, and also have interesting tasks for experienced developers.
 
 <hr>
+
 # What is Hacktoberfest? 😕
 
 A month-long celebration from October 1st to October 31st presented by Digital Ocean and DEV Community collaborated with GitHub to get people involved in Open Source. Create your very first pull request to any public repository on GitHub and contribute to the open-source developer community.
 
 https://hacktoberfest.com/
 
+<hr>
 ## Rules ⚓
 
 To earn your Hacktoberfest tee or tree reward, you must register and make four valid pull requests (PRs) between October 1-31 (in any time zone). PRs can be made to participating public repos on GitHub, those that have the Hacktoberfest topic. If a maintainer reports your pull request as spam or behavior not in line with the project’s code of conduct, you will be ineligible to participate. This year, the first 70,000 participants who successfully complete the challenge will be eligible to receive a prize.
@@ -38,7 +39,7 @@ Star the repo by pressing the topmost-right button to start your wonderful journ
 
 ### 1. Fork it :fork_and_knife:
 
-You can get your own fork/copy of [Hacktoberfest-21](https://github.com/ietebitmesra/Hacktoberfest-21) by using the <a href="https://github.com/helios1101/HacktoberFest_20/new/master?readme=1#fork-destination-box"><kbd><b>Fork</b></kbd></a> button on top-right of your screen.
+You can get your own fork/copy of [Hacktoberfest-22](https://github.com/ietebitmesra/Hacktoberfest-22) by using the <a href="https://github.com/ietebitmesra/Hacktoberfest-22/fork"><kbd><b>Fork</b></kbd></a> button on top-right of your screen.
 
  [![Fork Button](https://help.github.com/assets/images/help/repository/fork_button.jpg)](https://github.com/ietebitmesra/Hacktoberfest-21/)
 
