@@ -1,13 +1,9 @@
 
-
 # How to Setup & Contribute ? 🤷‍♀‍
 
-
- 
 ### 0. Star The Repo :star2:
 
 Star the repo by pressing the topmost-right button to start your wonderful journey.
-
 
 ### 1. Fork it :fork_and_knife:
 
@@ -23,16 +19,16 @@ You can get your own fork/copy of [Hacktoberfest-22](https://github.com/ietebitm
 You need to clone (download) it to local machine using
 
 ```sh
-$ git clone https://github.com/Your_Username/Hacktoberfest-21.git
+$ git clone https://github.com/Your_Username/Hacktoberfest-22.git
 ```
 
 > This makes a local copy of the repository in your machine.
 
-Once you have cloned the `Hacktoberfest-21` repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows(PowerShell to be used).
+Once you have cloned the `Hacktoberfest-22` repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows(PowerShell to be used).
 
 ```sh
-# This will change directory to a folder Hacktoberfest-21
-$ cd Hacktoberfest-21
+# This will change directory to a folder Hacktoberfest-22
+$ cd Hacktoberfest-22
 ```
 
 Move to this folder for all other commands.
@@ -43,14 +39,14 @@ Run the following commands to see that *your local copy* has a reference to *you
 
 ```sh
 $ git remote -v
-origin  https://github.com/Your_Username/Hacktoberfest-21.git (fetch)
-origin  https://github.com/Your_Username/Hacktoberfest-21.git (push)
+origin  https://github.com/Your_Username/Hacktoberfest-22.git (fetch)
+origin  https://github.com/Your_Username/Hacktoberfest-22.git (push)
 ```
 
-Now, let's add a reference to the original [Hacktoberfest-21](https://github.com/ietebitmesra/Hacktoberfest-21/) repository using
+Now, let's add a reference to the original [Hacktoberfest-22](https://github.com/ietebitmesra/Hacktoberfest-22/) repository using
 
 ```sh
-$ git remote add upstream https://github.com/ietebitmesra/Hacktoberfest-21.git
+$ git remote add upstream https://github.com/ietebitmesra/Hacktoberfest-22.git
 ```
 
 > This adds a new remote named ***upstream***.
@@ -59,18 +55,18 @@ See the changes using
 
 ```sh
 $ git remote -v
-origin    https://github.com/Your_Username/Hacktoberfest-21.git (fetch)
-origin    https://github.com/Your_Username/Hacktoberfest-21.git (push)
-upstream  https://github.com/Remote_Username/Hacktoberfest-21.git (fetch)
-upstream  https://github.com/Remote_Username/Hacktoberfest-21.git (push)
+origin    https://github.com/Your_Username/Hacktoberfest-22.git (fetch)
+origin    https://github.com/Your_Username/Hacktoberfest-22.git (push)
+upstream  https://github.com/Remote_Username/Hacktoberfest-22.git (fetch)
+upstream  https://github.com/Remote_Username/Hacktoberfest-22.git (push)
 ```
 `In your case, you will see`
 ```sh
 $ git remote -V
-origin    https://github.com/Your_Username/Hacktoberfest-21.git (fetch)
-origin    https://github.com/Your_Username/Hacktoberfest-21.git (push)
-upstream  https://github.com/ietebitmesra/Hacktoberfest-21.git (fetch)
-upstream  https://github.com/ietebitmesra/Hacktoberfest-21.git (push)
+origin    https://github.com/Your_Username/Hacktoberfest-22.git (fetch)
+origin    https://github.com/Your_Username/Hacktoberfest-22.git (push)
+upstream  https://github.com/ietebitmesra/Hacktoberfest-22.git (fetch)
+upstream  https://github.com/ietebitmesra/Hacktoberfest-22.git (push)
 ```
 
 ### 4. Sync it :recycle:
@@ -88,13 +84,13 @@ $ git checkout main
 # Reset local `main` branch to match the `upstream` repository's `main` branch
 $ git reset --hard upstream/main
 
-# Push changes to your forked `Hacktoberfest-21` repo
+# Push changes to your forked `Hacktoberfest-22` repo
 $ git push origin main
 ```
 
 ### 5. Ready Steady Go... :turtle: :rabbit2:
 
-Once you have completed these steps, you are ready to start contributing by checking our `Help Wanted` Issues and creating [pull requests](https://github.com/ietebitmesra/Hacktoberfest-21/pulls).
+Once you have completed these steps, you are ready to start contributing by checking our `Help Wanted` Issues and creating [pull requests](https://github.com/ietebitmesra/Hacktoberfest-22/pulls).
 
 ### 6. Create a new branch :bangbang:
 
