@@ -7,6 +7,8 @@ clearBtn.addEventListener('click', () => {
     main_div.parentNode.removeChild(main_div);
 });
 
+if (existingEntries) {
+    
 existingEntries.forEach(e => {
     // CREATE DOM ELEMENTS
     var first_div = document.createElement('DIV');
@@ -39,3 +41,4 @@ existingEntries.forEach(e => {
     first_div.append(second_div);
     main_div.append(first_div);
 });
+}
