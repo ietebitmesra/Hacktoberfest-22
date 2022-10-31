@@ -513,3 +513,19 @@ a{
     position: relative;
   }  
 }
+
+@media (min-width: 481px) and (max-width: 1280px){
+  .exp-sec{
+    max-width: 100vw;
+    height: auto;
+    margin-left: 0vw;
+    padding: 10px;
+    position: relative;
+  }  
+
+  .exp-cont{
+    max-width: 100vw;
+    width: 90vw;
+  }
+  
+}
