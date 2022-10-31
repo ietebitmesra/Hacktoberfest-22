@@ -180,6 +180,10 @@ th{
   margin-top:50px;
 }
 
+.container{
+  width:85vw;
+}
+
 .container .head-row {
 display: flex;
 justify-content: space-between;
@@ -395,7 +399,7 @@ a{
 .exp-sec{
   max-width: 1000px;
   height: auto;
-  margin: auto auto;
+  margin-left: 7.5vw;
   padding: 10px;
   position: relative;
 }
