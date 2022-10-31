@@ -23,7 +23,6 @@ a.logo {
   transform: scale(1.1);
 
 /* position:relative;
-
 height:200px !important ; */
 }
 
@@ -178,6 +177,10 @@ th{
 
 #sec-info{
   margin-top:50px;
+}
+
+.container{
+  width:85vw;
 }
 
 .container .head-row {
@@ -395,7 +398,7 @@ a{
 .exp-sec{
   max-width: 1000px;
   height: auto;
-  margin: auto auto;
+  margin-left: 7.5vw;
   padding: 10px;
   position: relative;
 }
@@ -499,4 +502,14 @@ a{
   padding: 8px 15px;
   border: 0px;
   font-size: 1.5rem;
+}
+
+@media (max-width: 480px ){
+  .exp-sec{
+    max-width: 80vw;
+    height: auto;
+    margin-left: 3vw;
+    padding: 10px;
+    position: relative;
+  }  
 }
