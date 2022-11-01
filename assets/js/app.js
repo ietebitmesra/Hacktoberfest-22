@@ -18,6 +18,9 @@ const resultDivImg = document.querySelector('#show-image')
 const resultDivInfo = document.querySelector('#show-prim-info')
 const searchResult = document.querySelector('#searchResult')
 
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const recognition = new window.SpeechRecognition();
+recognition.interimResults = true;
 
 //SHOW INFO WHEN CLICKED
 function show_info(show_name){
@@ -34,6 +37,22 @@ function clear_old_data(){
     document.getElementById("cast_data").innerHTML="";
     document.getElementById("EpisodeHeading").classList.add("active-b");
     document.getElementById("castHeading").classList.remove("active-b");
+}
+
+// function to convert speech to text
+function voice_search() {
+    document.getElementById('textBtn').style.color = 'red';
+    recognition.start();
+    recognition.addEventListener('result', (e) => {
+        const transcript = Array.from(e.results)
+            .map(result => result[0])
+            .map(result => result.transcript)
+            .join('');
+            document.querySelector('#searchText').value = transcript;
+    });
+    recognition.addEventListener('end', () => {
+        document.getElementById('textBtn').style.color = 'black';
+    });
 }
 
 //FORM SUBMISSION EVENT LISTENER
