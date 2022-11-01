@@ -42,7 +42,7 @@ This app uses [Movies api](https://developers.themoviedb.org/3/movies/get-movie-
 
 **(c ) Open the cloned repository on your local machine.**
 
-**(d) $cd Hacktoberfest_21**
+**(d) $cd Hacktoberfest-22**
 
 **(e) Create a separate branch for that issue $git checkout -b issueName/issueNumber**
 
