@@ -58,6 +58,8 @@ function voice_search() {
 // to update value in input field when a suggestion is chosen
 function changeValue(value) {
     document.querySelector('#searchText').value = value;
+    removeSuggestions();
+    submitForm();
 }
 
 // Add LI in UL
@@ -100,6 +102,10 @@ document.getElementById('searchText').onkeyup = async (e) => {
 //FORM SUBMISSION EVENT LISTENER
 form.addEventListener('submit', async (e)=>{
     e.preventDefault();
+    submitForm();
+});
+
+async function submitForm() {
     //check
     clear_old_data();
     // API CALL
@@ -331,7 +337,7 @@ form.addEventListener('submit', async (e)=>{
     similar_movies_result.forEach(item => {
         divAppender('similar', item.poster_path, item.name);
     });
-})
+}
 
 const divAppender = (container_class, img_src_path, title)=>{
     const pop_div = document.createElement("div");
