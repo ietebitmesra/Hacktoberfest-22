@@ -89,8 +89,8 @@
       <br>
       <h5 style='text-align: center; font-weight: bolder; color: #fff;'>We can help you search your favourite <span class="typing"></span></h5>
       <br>
-    <form id="showSearchForm" class="searchBar_pos1 searchForm" name="query">
-        <input type="search" id="searchText"  placeholder="What show are you looking for?">
+    <form id="showSearchForm" class="searchBar_pos1 searchForm" name="query" autocomplete="off">
+        <input type="search" id="searchText"  placeholder="What show are you looking for?"/>
         <button type="submit" id="searchBtn">
           <i class="fa fa-search searchIcon"></i>
         </button>
@@ -98,6 +98,9 @@
           <i class="fa fa-microphone"></i>
         </button>
     </form>
+    <div id="search-dropdown">
+      <ul id="search-dropdown-ul"></ul>
+    </div>
    </section>
 
    <script>

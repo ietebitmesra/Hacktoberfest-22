@@ -48,6 +48,32 @@ input#searchText {
   outline: none;
 }
 
+#search-dropdown {
+  display: none;
+  width: 55%;  
+  margin: 0 auto;
+}
+
+#search-dropdown-ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+#search-dropdown-ul li {
+  height: 2rem;
+  padding: 0 0.5rem;
+  margin: 0;
+}
+
+#search-dropdown-ul li:hover {
+  background: lightblue;
+  cursor: pointer;
+}
+
 button#searchBtn {
   outline: none;
   background: inherit;
