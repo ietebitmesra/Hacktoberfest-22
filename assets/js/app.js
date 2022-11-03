@@ -52,6 +52,7 @@ function voice_search() {
     });
     recognition.addEventListener('end', () => {
         document.getElementById('textBtn').style.color = 'black';
+        submitForm();
     });
 }
 
