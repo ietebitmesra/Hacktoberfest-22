@@ -55,9 +55,57 @@ function voice_search() {
     });
 }
 
+// to update value in input field when a suggestion is chosen
+function changeValue(value) {
+    document.querySelector('#searchText').value = value;
+    removeSuggestions();
+    submitForm();
+}
+
+// Add LI in UL
+async function addSuggestions(searchTerm) {
+    const res = await axios.get(`https://api.themoviedb.org/3/search/tv?api_key=${API_KEY}&language=en-US&page=1&include_adult=false&query=${searchTerm}`);
+    document.getElementById('search-dropdown').style.display = "block";
+    document.getElementById('search-dropdown').style.backgroundColor = "white";
+
+    document.getElementById('showSearchForm').style.borderRadius = '0px';
+
+    // to avoid overfilling the suggestion div
+    for(let i=0;i<5;i++) {
+        if(res.data.results.length == i) break;
+        const node = document.createElement("li");
+        // set attribute onClick to change value of input field when suggestion is chosen
+        node.setAttribute('onclick', `changeValue("${res.data.results[i].name}")`);
+        const text = document.createTextNode(res.data.results[i].name);
+        node.appendChild(text);
+        document.getElementById("search-dropdown-ul").appendChild(node);
+    }
+}
+
+// remove the div when input field is empty
+function removeSuggestions() {
+    document.getElementById('search-dropdown').style.display = "none";
+    const element = document.getElementById("search-dropdown-ul");
+    while(element.firstChild) {
+        element.removeChild(element.firstChild);
+    }
+}
+
+// FORM ON CHANGE LISTENER TO UPDATE SUGGESTIONS
+document.getElementById('searchText').onkeyup = async (e) => {
+    const searchTerm = document.querySelector('#searchText').value;
+    removeSuggestions();
+    if(searchTerm) addSuggestions(searchTerm);
+    else document.getElementById('showSearchForm').style.borderRadius = '2rem';
+};
+
 //FORM SUBMISSION EVENT LISTENER
 form.addEventListener('submit', async (e)=>{
     e.preventDefault();
+    submitForm();
+});
+
+async function submitForm() {
     //check
     clear_old_data();
     // API CALL
@@ -289,7 +337,7 @@ form.addEventListener('submit', async (e)=>{
     similar_movies_result.forEach(item => {
         divAppender('similar', item.poster_path, item.name);
     });
-})
+}
 
 const divAppender = (container_class, img_src_path, title)=>{
     const pop_div = document.createElement("div");
