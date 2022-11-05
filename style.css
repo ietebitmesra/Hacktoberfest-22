@@ -61,12 +61,17 @@ input#searchText {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  position: absolute;
 }
 
 #search-dropdown-ul li {
   height: 2rem;
   padding: 0 0.5rem;
   margin: 0;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  width: 55%;
 }
 
 #search-dropdown-ul li:hover {
