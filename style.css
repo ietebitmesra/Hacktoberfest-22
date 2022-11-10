@@ -9,30 +9,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
 body {
-    padding-top: 1rem;
-    margin: 0;
-    background-color: #2D6967;
-    height: auto;
-    overflow-x: hidden;
+  padding-top: 1rem;
+  margin: 0;
+  background-image: linear-gradient(black 0%, black, white 60%, black 80%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: auto;
+  overflow-x: hidden;
 }
-
 .open {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a.logo {
-    font-size: 2.5em;
-    font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  font-family: "Dancing Script", cursive;
 }
 
 .hov {
-    transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .hov:hover {
-    transform: scale(1.1);
-    /* position:relative;
-height:200px !important ; */
+  transform: scale(1.1);
+    font-size: 2.5em;
+    font-family: 'Dancing Script', cursive;
 }
 
 form.searchForm {
@@ -49,14 +50,13 @@ form.searchForm {
 }
 
 input#searchText {
-    /* width: 60%; */
-    border: none;
-    width: 100%;
-    border-radius: 30px;
-    padding: 7px;
-    outline: none;
+  /* width: 60%; */
+  border: none;
+  width: 100%;
+  border-radius: 30px;
+  padding: 7px;
+  outline: none;
 }
-
 #search-dropdown {
     display: none;
     width: 55%;
@@ -113,66 +113,106 @@ button#searchBtn {
 }
 
 .navbar {
-    background-color: #2D6967;
+  background-color: #2d6967;
 }
-
 .navbar-brand {
-    color: white;
+  color: white;
 }
 
 .navbar-nav li a {
-    color: white;
+  color: white;
 }
 
 .main-area {
-    display: flex;
-    height: 80vh;
+  display: flex;
+  height: 80vh;
 }
 
 #searchBar {
-    margin-top: 20vh;
+  margin-top: 20vh;
 }
 
 .container1 {
-    height: 90%;
-    width: 90%;
-    margin: 40px auto;
-    padding: 30px;
+  height: 90%;
+  width: 90%;
+  margin: 40px auto;
+  padding: 30px;
+  z-index: 20;
+  perspective: 150rem;
+  position: relative;
 }
-
+.popular-shows__container {
+  position: relative;
+  z-index: 10;
+  perspective: 150rem;
+}
+.container1__background {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(234, 29, 29),
+    rgb(75, 10, 10)
+  );
+  box-shadow: 10px 10px 50px 10px rgb(0, 0, 0);
+}
+.container1__background--1 {
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 20%, 0 95%);
+  clip-path: polygon(0 0, 100% 20%, 100% 20%, 0 95%);
+  transform: translateY(-100%) rotateX(-40deg);
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(234, 29, 29),
+    rgb(75, 10, 10)
+  );
+}
+.container1__background--2 {
+  -webkit-clip-path: polygon(100% 30%, 100% 100%, 0% 100%, 0% 100%);
+  clip-path: polygon(100% 30%, 100% 100%, 0% 100%, 0% 100%);
+  transform: translateY(-100%) rotateX(-34deg);
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(96, 9, 9) 40%,
+    rgb(229, 13, 13)
+  );
+}
 .container-fluid {
-    height: 90%;
-    width: 90%;
-    margin-top: 40px;
-    padding: 30px;
-    border-radius: 40px;
-    background: #e6e7ee;
-    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+  height: 90%;
+  width: 90%;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 40px;
+  background: #e6e7ee;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
 }
 
 .card {
-    border-radius: 21px;
-    /* box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff; */
-    background-color: #48A9A6;
-    margin: 20px auto 0;
-    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+  border-radius: 21px;
+  /* box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff; */
+  background-color: #48a9a6;
+  margin: 20px auto 0;
+  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
 }
 
 .card:hover {
-    box-shadow: 3px 3px 10px #b8b9be, -3px -3px 6px #fff;
-    color: white;
-    transition: all 0.3s;
+  box-shadow: 3px 3px 10px #b8b9be, -3px -3px 6px #fff;
+  color: white;
+  transition: all 0.3s;
 }
 
 .card-img,
 .card-img-top {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .card-img-top {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
 }
 
 
@@ -182,7 +222,6 @@ button#searchBtn {
 
 
 /* set hidden with !important to override other display css */
-
 .hidden {
     display: none !important;
 }
@@ -220,139 +259,139 @@ table {
 
 td,
 th {
-    border: 2px solid black;
-    color: #b3b3b3;
-    padding: 5px
+  border: 2px solid black;
+  color: #b3b3b3;
+  padding: 5px;
 }
 
 th {
-    color: #000;
-    font-size: 30px;
+  color: #000;
+  font-size: 30px;
 }
 
 #sec-info {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .container {
-    width: 85vw;
+  width: 85vw;
 }
 
 .container .head-row {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 @media (max-width: 979px) {
-    .container .head-row {
-        justify-content: flex-start;
-        margin: 0 20px;
-    }
-    form#searchForm {
-        width: 80%;
-    }
+  .container .head-row {
+    justify-content: flex-start;
+    margin: 0 20px;
+  }
+
+  form#searchForm {
+    width: 80%;
+  }
 }
 
 #main-info {
-    display: flex;
+  display: flex;
 }
 
 #show-image img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 #show-prim-info {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .list-links::after {
-    color: #ffffff
+  color: #ffffff;
 }
 
 .tvcard:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .season_design {
-    background-color: rgb(255, 255, 255, 0.2);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    font-size: 18px;
-    list-style: none;
-    margin-top: 30px
+  background-color: rgb(255, 255, 255, 0.2);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  font-size: 18px;
+  list-style: none;
+  margin-top: 30px;
 }
 
 .slink {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 .slink:hover {
-    color: rgb(155, 240, 240);
-    font-weight: bold;
+  color: rgb(155, 240, 240);
+  font-weight: bold;
 }
 
 .table_design {
-    background-color: #feffff;
-    color: black;
+  background-color: #feffff;
+  color: black;
 }
 
 .table_design td {
-    color: black;
-    border: 0px solid white;
+  color: black;
+  border: 0px solid white;
 }
 
 .table_design th {
-    background-color: #263f52;
-    color: white;
-    border: solid black 0px;
-    font-size: 16px;
+  background-color: #263f52;
+  color: white;
+  border: solid black 0px;
+  font-size: 16px;
 }
 
 .table_design tr:nth-child(odd) {
-    background-color: #c3c4c4;
+  background-color: #c3c4c4;
 }
 
 .carousel {
-    width: 1100px;
-    height: 140px;
+  width: 1100px;
+  height: 140px;
 }
 
-#recommendations>div {
-    margin: 5px;
-    border-radius: 10px;
+#recommendations > div {
+  margin: 5px;
+  border-radius: 10px;
 }
 
-.recom-div>img {
-    width: 250px;
-    height: 140px;
-    border-radius: 10px;
-    box-shadow: 9px 9px 20px, 7px 7px 10px, 5px 5px 7px, 3px 3px 1px, 1px 1px;
+.recom-div > img {
+  width: 250px;
+  height: 140px;
+  border-radius: 10px;
+  box-shadow: 9px 9px 20px, 7px 7px 10px, 5px 5px 7px, 3px 3px 1px, 1px 1px;
 }
-
-.recom-div>span {
-    margin-top: 15px;
-    padding: 10px;
+.recom-div > span {
+  margin-top: 15px;
+  padding: 10px;
 }
 
 .recs {
-    display: flex;
+  display: flex;
 }
 
 .recom-div {
-    margin: 10px
+  margin: 10px;
 }
 
-.recom-div>span>p:nth-child(1) {
-    margin-right: 30px;
+.recom-div > span > p:nth-child(1) {
+  margin-right: 30px;
 }
 
 .active-link {
-    color: cyan;
+  color: cyan;
 }
 
 .cast-card {
@@ -410,7 +449,6 @@ a {
 
 
 /* set to !important to override other styles */
-
 .active-c {
     box-shadow: inset 3px 3px 20px rgb(0, 0, 0, 0.2), inset -3px -3px 20px rgb(0, 0, 0, 0.4) !important;
     background-color: #1c413f !important;
